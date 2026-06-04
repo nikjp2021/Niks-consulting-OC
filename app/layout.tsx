@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
+import { Navbar } from '@/components/layout/Navbar'
 
 export const metadata: Metadata = {
   title: "Nik's Consulting | AI-First Digital Transformation",
@@ -15,47 +16,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
       </body>
     </html>
-  )
-}
-
-function Navbar() {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-surface-0/80 backdrop-blur-xl border-b border-white/[0.04]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <a href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-accent-violet flex items-center justify-center font-display font-extrabold text-white shadow-[0_0_15px_rgba(59,130,246,0.3)]">
-              N
-            </div>
-            <span className="font-display font-bold text-lg text-ink-100">
-              Nik's <span className="text-brand-500">Consulting</span>
-            </span>
-          </a>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-sm text-ink-400 hover:text-brand-500 transition-colors">Home</a>
-            <a href="/services" className="text-sm text-ink-400 hover:text-brand-500 transition-colors">Services</a>
-            <a href="/case-studies" className="text-sm text-ink-400 hover:text-brand-500 transition-colors">Case Studies</a>
-            <a href="/about" className="text-sm text-ink-400 hover:text-brand-500 transition-colors">About</a>
-            <a href="/contact" className="text-sm text-ink-400 hover:text-brand-500 transition-colors">Contact</a>
-          </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="/get-a-quote"
-              className="hidden sm:inline-flex glow-button px-5 py-2 rounded-xl text-sm"
-            >
-              Get a Quote
-            </a>
-            <button className="md:hidden p-2 rounded-xl hover:bg-white/5 transition-colors text-ink-400">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
   )
 }
 

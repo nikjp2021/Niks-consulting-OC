@@ -184,7 +184,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] tracking-tight text-balance"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] tracking-tight text-balance"
           >
             <span className="text-ink-100">We build</span><br />
             <span className="gradient-text">AI-powered</span><br />
@@ -195,7 +195,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 text-lg sm:text-xl text-ink-400 max-w-2xl mx-auto leading-relaxed"
+            className="mt-8 text-base sm:text-lg md:text-xl text-ink-400 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0"
           >
             Digital transformation partner for startups and SMEs. Agentic AI, automation, and lean strategies that turn complexity into exponential growth.
           </motion.p>
@@ -219,7 +219,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.7 }}
-            className="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto"
+            className="mt-16 sm:mt-20 grid grid-cols-3 gap-6 sm:gap-8 max-w-lg mx-auto"
           >
             {[
               { value: '300%+', label: 'Avg. ROI' },
@@ -287,11 +287,11 @@ export default function Home() {
             <motion.p variants={fadeUp} className="text-sm font-bold text-brand-500 uppercase tracking-[0.2em] mb-4">
               Services
             </motion.p>
-            <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-ink-100 mb-6 leading-tight">
+            <motion.h2 variants={fadeUp}             className="text-3xl sm:text-5xl md:text-6xl font-display font-bold text-ink-100 mb-6 leading-tight">
               AI-powered solutions for{' '}
               <span className="gradient-text">modern businesses</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-ink-400 max-w-2xl mx-auto">
+            <motion.p variants={fadeUp} className="text-base sm:text-lg text-ink-400 max-w-2xl mx-auto px-4 sm:px-0">
               From intelligent automation to full digital transformation — we deliver measurable results, not just slide decks.
             </motion.p>
           </motion.div>
@@ -337,11 +337,11 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.p variants={fadeUp} className="text-sm font-bold text-accent-violet uppercase tracking-[0.2em] mb-4">Results</motion.p>
-            <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
               Real businesses,{' '}
               <span className="gradient-text">real outcomes</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-ink-400 max-w-2xl mx-auto">
+            <motion.p variants={fadeUp} className="text-base sm:text-lg text-ink-400 max-w-2xl mx-auto">
               See how AI-powered solutions have transformed operations and driven growth for our clients.
             </motion.p>
           </motion.div>
@@ -404,10 +404,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.p variants={fadeUp} className="text-sm font-bold text-accent-cyan uppercase tracking-[0.2em] mb-4">Process</motion.p>
-            <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
               How we work
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-ink-400 max-w-2xl mx-auto">
+            <motion.p variants={fadeUp} className="text-base sm:text-lg text-ink-400 max-w-2xl mx-auto">
               A proven process enhanced by AI — from discovery to deployment, we deliver faster and smarter.
             </motion.p>
           </motion.div>
@@ -449,10 +449,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.p variants={fadeUp} className="text-sm font-bold text-accent-pink uppercase tracking-[0.2em] mb-4">Testimonials</motion.p>
-            <motion.h2 variants={fadeUp} className="text-4xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
               What our clients say
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-ink-400 max-w-2xl mx-auto">
+            <motion.p variants={fadeUp} className="text-base sm:text-lg text-ink-400 max-w-2xl mx-auto">
               Don&apos;t just take our word for it — hear from the businesses we&apos;ve helped transform.
             </motion.p>
           </motion.div>

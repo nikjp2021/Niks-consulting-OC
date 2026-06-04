@@ -86,10 +86,10 @@ export default function CaseStudies() {
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-3 text-center md:text-left">
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-accent-cyan uppercase tracking-[0.2em] mb-4">Case Studies</motion.p>
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
+              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-4xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
                 Real businesses, <span className="gradient-text">real outcomes</span>
               </motion.h1>
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-xl">
+              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base sm:text-lg text-ink-400 max-w-xl">
                 See how AI-powered solutions have transformed operations and driven growth for our clients around the world.
               </motion.p>
             </div>

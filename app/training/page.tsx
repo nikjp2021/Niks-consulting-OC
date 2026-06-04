@@ -26,17 +26,36 @@ export default function Training() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-accent-amber uppercase tracking-[0.2em] mb-4">Training</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-4xl sm:text-6xl font-display font-bold text-ink-100 mb-6">
             Level up with <span className="gradient-text">AI training</span>
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-3xl mx-auto">
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base sm:text-lg text-ink-400 max-w-3xl mx-auto">
             Hands-on training programs designed to equip your team with practical AI skills. From fundamentals to advanced agentic development.
           </motion.p>
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-5 gap-12 items-center mb-16">
+            <div className="md:col-span-3">
+              <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-sm font-bold text-accent-amber uppercase tracking-[0.2em] mb-4">
+                Programs
+              </motion.p>
+              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-4xl sm:text-5xl font-display font-bold text-ink-100 mb-6">
+                Choose your <span className="gradient-text">learning path</span>
+              </motion.h2>
+              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-xl">
+                From beginner to advanced — find the right program for your team&apos;s AI journey.
+              </motion.p>
+            </div>
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="hidden md:block md:col-span-2">
+              <div className="glass-card overflow-hidden rounded-2xl">
+                <img src="/assets/Copilot_20260524_190917.webp" alt="AI Training" className="w-full h-72 object-cover" />
+              </div>
+            </motion.div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6">
             {programs.map((p, i) => (
               <motion.div
@@ -63,7 +82,7 @@ export default function Training() {
         </div>
       </section>
 
-      <section className="py-20 bg-surface-0">
+      <section className="pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-12 md:p-20 text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-ink-100 mb-6">Want a custom training program for your team?</h2>

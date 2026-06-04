@@ -9,11 +9,11 @@ export default function Contact() {
         <div className="absolute inset-0 hero-gradient" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-brand-500 uppercase tracking-[0.2em] mb-4">Contact</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
-            Let's <span className="gradient-text">talk</span>
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-4xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
+            Let&apos;s <span className="gradient-text">talk</span>
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-3xl mx-auto">
-            Have a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you within 24 hours.
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base sm:text-lg text-ink-400 max-w-3xl mx-auto">
+            Have a project in mind? We&apos;d love to hear about it. Drop us a message and we&apos;ll get back to you within 24 hours.
           </motion.p>
         </div>
       </section>
@@ -22,8 +22,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
-              <div className="glass-card overflow-hidden">
-                <img src="/assets/Copilot_20260524_190742.webp" alt="Get in touch" className="w-full h-40 object-contain opacity-60 bg-surface-1" />
+              <div className="glass-card overflow-hidden rounded-2xl">
+                <img src="/assets/Copilot_20260603_165901.webp" alt="Get in touch" className="w-full h-64 md:h-80 object-cover" />
               </div>
               <div className="glass-card p-8 md:p-10">
                 <h2 className="text-2xl font-display font-bold text-ink-100 mb-8">Send us a message</h2>
@@ -52,8 +52,8 @@ export default function Contact() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
-              <div className="glass-card overflow-hidden">
-                <img src="/assets/Copilot_20260525_015955.webp" alt="Contact us" className="w-full h-48 object-contain opacity-70 bg-surface-1" />
+              <div className="glass-card overflow-hidden rounded-2xl">
+                <img src="/assets/Copilot_20260603_170116.webp" alt="Contact us" className="w-full h-64 md:h-96 object-cover" />
               </div>
               <div className="glass-card p-8">
                 <h3 className="text-lg font-display font-semibold text-ink-100 mb-6">Contact Information</h3>
@@ -84,7 +84,7 @@ export default function Contact() {
 
               <div className="glass-card p-8">
                 <h3 className="text-lg font-display font-semibold text-ink-100 mb-4">Response Time</h3>
-                <p className="text-sm text-ink-400 leading-relaxed">We typically respond within 24 hours. For urgent inquiries, book a call directly and we'll get back to you within the hour.</p>
+                <p className="text-sm text-ink-400 leading-relaxed">We typically respond within 24 hours. For urgent inquiries, book a call directly and we&apos;ll get back to you within the hour.</p>
                 <a href="/get-a-quote" className="mt-4 inline-flex glow-button px-6 py-3 rounded-xl text-sm">Book a Call</a>
               </div>
             </motion.div>
