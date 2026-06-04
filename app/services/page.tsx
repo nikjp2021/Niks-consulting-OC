@@ -108,20 +108,33 @@ export default function Services() {
                 </div>
                 <div className="hidden md:block relative overflow-hidden" style={{ background: `radial-gradient(ellipse at center, ${service.color}15, transparent 70%)` }}>
                   <div className="absolute inset-0 flex items-center justify-center p-14">
-                    <div className="w-full h-full rounded-2xl border border-white/[0.04] bg-white/[0.02] p-8">
-                      <div className="flex gap-2 mb-6">
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: `${service.color}40` }} />
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: `${service.color}30` }} />
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: `${service.color}20` }} />
-                      </div>
-                      <div className="space-y-3">
-                        <div className="h-3 rounded w-3/4" style={{ backgroundColor: `${service.color}25` }} />
-                        <div className="h-3 rounded w-1/2" style={{ backgroundColor: `${service.color}20` }} />
-                        <div className="h-3 rounded w-5/6" style={{ backgroundColor: `${service.color}15` }} />
-                        <div className="h-20 rounded w-full mt-6 relative overflow-hidden" style={{ backgroundColor: `${service.color}10` }}>
-                          <div className="absolute inset-0" style={{ background: `linear-gradient(90deg, transparent, ${service.color}15, transparent)`, backgroundSize: '200% 100%', animation: 'shimmer 2s linear infinite' }} />
-                        </div>
-                      </div>
+                    <div className="w-full h-full rounded-2xl border border-white/[0.04] bg-white/[0.02] p-8 relative">
+                      <svg viewBox="0 0 200 160" className="w-full h-full opacity-40">
+                        <circle cx="30" cy="30" r="4" fill={service.color} opacity="0.6" />
+                        <circle cx="60" cy="25" r="3" fill={service.color} opacity="0.4" />
+                        <circle cx="100" cy="35" r="5" fill={service.color} opacity="0.5" />
+                        <circle cx="140" cy="20" r="3" fill={service.color} opacity="0.3" />
+                        <circle cx="170" cy="40" r="4" fill={service.color} opacity="0.5" />
+                        <circle cx="20" cy="70" r="3" fill={service.color} opacity="0.4" />
+                        <circle cx="50" cy="80" r="5" fill={service.color} opacity="0.3" />
+                        <circle cx="90" cy="65" r="4" fill={service.color} opacity="0.6" />
+                        <circle cx="120" cy="85" r="6" fill={service.color} opacity="0.4" />
+                        <circle cx="160" cy="70" r="3" fill={service.color} opacity="0.5" />
+                        <circle cx="180" cy="90" r="4" fill={service.color} opacity="0.3" />
+                        <circle cx="40" cy="120" r="4" fill={service.color} opacity="0.5" />
+                        <circle cx="70" cy="110" r="3" fill={service.color} opacity="0.4" />
+                        <circle cx="110" cy="125" r="5" fill={service.color} opacity="0.3" />
+                        <circle cx="150" cy="115" r="4" fill={service.color} opacity="0.6" />
+                        <circle cx="30" cy="145" r="3" fill={service.color} opacity="0.4" />
+                        <circle cx="80" cy="140" r="4" fill={service.color} opacity="0.5" />
+                        <circle cx="130" cy="145" r="3" fill={service.color} opacity="0.3" />
+                        <circle cx="170" cy="135" r="5" fill={service.color} opacity="0.5" />
+                        <line x1="10" y1="50" x2="190" y2="50" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                        <line x1="10" y1="100" x2="190" y2="100" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                        <line x1="10" y1="150" x2="190" y2="150" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                        <path d="M20 130 Q60 100 100 130 T180 120" stroke={service.color} strokeWidth="1" fill="none" opacity="0.25" />
+                        <path d="M20 140 Q60 160 100 140 T180 150" stroke={service.color} strokeWidth="1" fill="none" opacity="0.15" />
+                      </svg>
                     </div>
                   </div>
                 </div>

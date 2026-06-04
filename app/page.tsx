@@ -232,12 +232,12 @@ export default function Home() {
             className="flex flex-wrap justify-center gap-6 md:gap-10"
           >
             {[
-              { name: 'Anthropic', src: '/assets/Anthropic Logo Image Request.png' },
-              { name: 'OpenAI', src: '/assets/Copilot_20260524_190259.png' },
-              { name: 'GitHub', src: '/assets/Copilot_20260524_190742.png' },
-              { name: 'Vercel', src: '/assets/Copilot_20260525_015354.png' },
-              { name: 'AWS', src: '/assets/Copilot_20260525_015357.png' },
-              { name: 'Stripe', src: '/assets/Copilot_20260525_015955.png' },
+              { name: 'Anthropic', src: '/assets/Anthropic Logo Image Request.webp' },
+              { name: 'OpenAI', src: '/assets/Copilot_20260524_190259.webp' },
+              { name: 'GitHub', src: '/assets/Copilot_20260524_190742.webp' },
+              { name: 'Vercel', src: '/assets/Copilot_20260525_015354.webp' },
+              { name: 'AWS', src: '/assets/Copilot_20260525_015357.webp' },
+              { name: 'Stripe', src: '/assets/Copilot_20260525_015955.webp' },
             ].map((logo) => (
               <motion.div
                 key={logo.name}
