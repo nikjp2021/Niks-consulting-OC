@@ -21,7 +21,10 @@ export default function Contact() {
       <section className="pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
+              <div className="glass-card overflow-hidden">
+                <img src="/assets/Copilot_20260524_190742.webp" alt="Get in touch" className="w-full h-40 object-cover opacity-60" />
+              </div>
               <div className="glass-card p-8 md:p-10">
                 <h2 className="text-2xl font-display font-bold text-ink-100 mb-8">Send us a message</h2>
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
@@ -49,6 +52,9 @@ export default function Contact() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
+              <div className="glass-card overflow-hidden">
+                <img src="/assets/Copilot_20260525_015955.webp" alt="Contact us" className="w-full h-48 object-cover opacity-70" />
+              </div>
               <div className="glass-card p-8">
                 <h3 className="text-lg font-display font-semibold text-ink-100 mb-6">Contact Information</h3>
                 <div className="space-y-5">

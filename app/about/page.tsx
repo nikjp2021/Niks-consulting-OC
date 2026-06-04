@@ -20,9 +20,14 @@ const values = [
 export default function About() {
   return (
     <>
-      <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 hero-gradient" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="pt-32 pb-20 relative overflow-hidden min-h-[700px] flex items-center">
+        <div className="absolute inset-0">
+          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+            <source src="/assets/Generate_Video_Extreme_close_.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-surface-0/60 backdrop-blur-sm" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-accent-violet uppercase tracking-[0.2em] mb-4">About</motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
             Pioneers in <span className="gradient-text">AI Solutions</span>

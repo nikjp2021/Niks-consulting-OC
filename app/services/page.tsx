@@ -60,16 +60,25 @@ export default function Services() {
     <>
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-brand-500 uppercase tracking-[0.2em] mb-4">
-            Services
-          </motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
-            Everything you need to <span className="gradient-text">scale with AI</span>
-          </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-3xl mx-auto">
-            End-to-end AI solutions tailored for startups and SMEs. Each service is designed to deliver measurable results from day one.
-          </motion.p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-5 gap-12 items-center">
+            <div className="md:col-span-3 text-center md:text-left">
+              <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-sm font-bold text-brand-500 uppercase tracking-[0.2em] mb-4">
+                Services
+              </motion.p>
+              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-ink-100 mb-6">
+                Everything you need to <span className="gradient-text">scale with AI</span>
+              </motion.h1>
+              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-ink-400 max-w-xl">
+                End-to-end AI solutions tailored for startups and SMEs. Each service is designed to deliver measurable results from day one.
+              </motion.p>
+            </div>
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }} className="hidden md:block md:col-span-2">
+              <div className="glass-card overflow-hidden">
+                <img src="/assets/Copilot_20260525_015354.webp" alt="AI Solutions" className="w-full h-64 object-cover opacity-70 hover:opacity-100 transition-opacity" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

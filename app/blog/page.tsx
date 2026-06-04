@@ -9,8 +9,8 @@ export default function Blog() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
           <div className="glass-card p-16 md:p-24">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand-500/20 to-accent-violet/20 flex items-center justify-center mx-auto mb-8">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand-500"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            <div className="rounded-2xl overflow-hidden mb-8 max-w-sm mx-auto">
+              <img src="/assets/Copilot_20260524_190259.webp" alt="Blog" className="w-full h-32 object-cover opacity-60" />
             </div>
             <h1 className="text-5xl sm:text-6xl font-display font-bold text-ink-100 mb-6">Coming Soon</h1>
             <p className="text-lg text-ink-400 max-w-xl mx-auto mb-10">We're crafting insightful articles about AI, digital transformation, and building products that scale.</p>
