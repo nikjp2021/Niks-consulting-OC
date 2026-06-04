@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { TiltCard } from '@/components/ui/TiltCard'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -82,13 +83,14 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="glass-card-hover p-8 text-center"
               >
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-5" style={{ backgroundColor: `${v.color}20` }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={v.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <h3 className="text-lg font-semibold text-ink-100 mb-3">{v.title}</h3>
-                <p className="text-sm text-ink-400 leading-relaxed">{v.desc}</p>
+                <TiltCard className="glass-card-hover p-8 text-center" tiltDegree={6}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-5" style={{ backgroundColor: `${v.color}20` }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={v.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-ink-100 mb-3">{v.title}</h3>
+                  <p className="text-sm text-ink-400 leading-relaxed">{v.desc}</p>
+                </TiltCard>
               </motion.div>
             ))}
           </div>

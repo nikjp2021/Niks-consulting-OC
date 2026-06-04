@@ -1,6 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Suspense, useState, useEffect, useCallback } from 'react'
+import { Scene } from '@/components/canvas/Scene'
+import { HeroParticles } from '@/components/scenes/HeroParticles'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -128,10 +131,29 @@ const testimonials = [
 ]
 
 export default function Home() {
+  const [mouse, setMouse] = useState({ x: 0, y: 0 })
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    setMouse({
+      x: (e.clientX / window.innerWidth) * 2 - 1,
+      y: -(e.clientY / window.innerHeight) * 2 + 1,
+    })
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [handleMouseMove])
+
   return (
     <>
       {/* HERO */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+        {/* 3D Particle Background */}
+        <Suspense fallback={null}>
+          <Scene>
+            <HeroParticles mouse={mouse} />
+          </Scene>
+        </Suspense>
         {/* Video Background */}
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/assets/Generate_video_Fast_dolly_sho.mp4" type="video/mp4" />

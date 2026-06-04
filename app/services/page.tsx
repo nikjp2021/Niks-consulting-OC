@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { TiltCard } from '@/components/ui/TiltCard'
 
 const services = [
   {
@@ -92,62 +93,63 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.7 }}
-              className="glass-card overflow-hidden"
             >
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="p-10 md:p-14">
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
-                    style={{ backgroundColor: `${service.color}20` }}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={service.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <h2 className="text-3xl font-display font-bold text-ink-100 mb-4">{service.title}</h2>
-                  <p className="text-ink-400 leading-relaxed mb-8">{service.desc}</p>
-                  <ul className="space-y-3">
-                    {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-3 text-sm text-ink-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={service.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="hidden md:block relative overflow-hidden" style={{ background: `radial-gradient(ellipse at center, ${service.color}15, transparent 70%)` }}>
-                  <div className="absolute inset-0 flex items-center justify-center p-14">
-                    <div className="w-full h-full rounded-2xl border border-white/[0.04] bg-white/[0.02] p-8 relative">
-                      <svg viewBox="0 0 200 160" className="w-full h-full opacity-40">
-                        <circle cx="30" cy="30" r="4" fill={service.color} opacity="0.6" />
-                        <circle cx="60" cy="25" r="3" fill={service.color} opacity="0.4" />
-                        <circle cx="100" cy="35" r="5" fill={service.color} opacity="0.5" />
-                        <circle cx="140" cy="20" r="3" fill={service.color} opacity="0.3" />
-                        <circle cx="170" cy="40" r="4" fill={service.color} opacity="0.5" />
-                        <circle cx="20" cy="70" r="3" fill={service.color} opacity="0.4" />
-                        <circle cx="50" cy="80" r="5" fill={service.color} opacity="0.3" />
-                        <circle cx="90" cy="65" r="4" fill={service.color} opacity="0.6" />
-                        <circle cx="120" cy="85" r="6" fill={service.color} opacity="0.4" />
-                        <circle cx="160" cy="70" r="3" fill={service.color} opacity="0.5" />
-                        <circle cx="180" cy="90" r="4" fill={service.color} opacity="0.3" />
-                        <circle cx="40" cy="120" r="4" fill={service.color} opacity="0.5" />
-                        <circle cx="70" cy="110" r="3" fill={service.color} opacity="0.4" />
-                        <circle cx="110" cy="125" r="5" fill={service.color} opacity="0.3" />
-                        <circle cx="150" cy="115" r="4" fill={service.color} opacity="0.6" />
-                        <circle cx="30" cy="145" r="3" fill={service.color} opacity="0.4" />
-                        <circle cx="80" cy="140" r="4" fill={service.color} opacity="0.5" />
-                        <circle cx="130" cy="145" r="3" fill={service.color} opacity="0.3" />
-                        <circle cx="170" cy="135" r="5" fill={service.color} opacity="0.5" />
-                        <line x1="10" y1="50" x2="190" y2="50" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
-                        <line x1="10" y1="100" x2="190" y2="100" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
-                        <line x1="10" y1="150" x2="190" y2="150" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
-                        <path d="M20 130 Q60 100 100 130 T180 120" stroke={service.color} strokeWidth="1" fill="none" opacity="0.25" />
-                        <path d="M20 140 Q60 160 100 140 T180 150" stroke={service.color} strokeWidth="1" fill="none" opacity="0.15" />
+              <TiltCard className="glass-card overflow-hidden" tiltDegree={6}>
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="p-10 md:p-14">
+                    <div
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                      style={{ backgroundColor: `${service.color}20` }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={service.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
                       </svg>
+                    </div>
+                    <h2 className="text-3xl font-display font-bold text-ink-100 mb-4">{service.title}</h2>
+                    <p className="text-ink-400 leading-relaxed mb-8">{service.desc}</p>
+                    <ul className="space-y-3">
+                      {service.features.map((f) => (
+                        <li key={f} className="flex items-center gap-3 text-sm text-ink-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={service.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="hidden md:block relative overflow-hidden" style={{ background: `radial-gradient(ellipse at center, ${service.color}15, transparent 70%)` }}>
+                    <div className="absolute inset-0 flex items-center justify-center p-14">
+                      <div className="w-full h-full rounded-2xl border border-white/[0.04] bg-white/[0.02] p-8 relative">
+                        <svg viewBox="0 0 200 160" className="w-full h-full opacity-40">
+                          <circle cx="30" cy="30" r="4" fill={service.color} opacity="0.6" />
+                          <circle cx="60" cy="25" r="3" fill={service.color} opacity="0.4" />
+                          <circle cx="100" cy="35" r="5" fill={service.color} opacity="0.5" />
+                          <circle cx="140" cy="20" r="3" fill={service.color} opacity="0.3" />
+                          <circle cx="170" cy="40" r="4" fill={service.color} opacity="0.5" />
+                          <circle cx="20" cy="70" r="3" fill={service.color} opacity="0.4" />
+                          <circle cx="50" cy="80" r="5" fill={service.color} opacity="0.3" />
+                          <circle cx="90" cy="65" r="4" fill={service.color} opacity="0.6" />
+                          <circle cx="120" cy="85" r="6" fill={service.color} opacity="0.4" />
+                          <circle cx="160" cy="70" r="3" fill={service.color} opacity="0.5" />
+                          <circle cx="180" cy="90" r="4" fill={service.color} opacity="0.3" />
+                          <circle cx="40" cy="120" r="4" fill={service.color} opacity="0.5" />
+                          <circle cx="70" cy="110" r="3" fill={service.color} opacity="0.4" />
+                          <circle cx="110" cy="125" r="5" fill={service.color} opacity="0.3" />
+                          <circle cx="150" cy="115" r="4" fill={service.color} opacity="0.6" />
+                          <circle cx="30" cy="145" r="3" fill={service.color} opacity="0.4" />
+                          <circle cx="80" cy="140" r="4" fill={service.color} opacity="0.5" />
+                          <circle cx="130" cy="145" r="3" fill={service.color} opacity="0.3" />
+                          <circle cx="170" cy="135" r="5" fill={service.color} opacity="0.5" />
+                          <line x1="10" y1="50" x2="190" y2="50" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                          <line x1="10" y1="100" x2="190" y2="100" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                          <line x1="10" y1="150" x2="190" y2="150" stroke={service.color} strokeWidth="0.5" opacity="0.15" />
+                          <path d="M20 130 Q60 100 100 130 T180 120" stroke={service.color} strokeWidth="1" fill="none" opacity="0.25" />
+                          <path d="M20 140 Q60 160 100 140 T180 150" stroke={service.color} strokeWidth="1" fill="none" opacity="0.15" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </TiltCard>
             </motion.div>
           ))}
         </div>
