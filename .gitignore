@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lock
+
+# Next.js
+/.next/
+/out/
+/.cache/
+# Production builds
+/build/
+
+# Misc
+.DS_Thumbs
+.env*
+!.env.example
+.vercel
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Lato:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #8B5CF6;
+  --color-background: #FFFFFF;
+  --color-background-dark: #111827;
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-border: #E5E7EB;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Typography Scale */
+  --font-size-heading-1: 3rem; /* 48px */
+  --font-size-heading-2: 2.5rem; /* 40px */
+  --font-size-heading-3: 2rem; /* 32px */
+  --font-size-heading-4: 1.75rem; /* 28px */
+  --font-size-heading-5: 1.5rem; /* 24px */
+  --font-size-heading-6: 1.25rem; /* 20px */
+  --font-size-body-large: 1.125rem; /* 18px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-body-small: 0.875rem; /* 14px */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing Scale */
+  --space-0-5: 0.5rem; /* 8px */
+  --space-1: 1rem; /* 16px */
+  --space-1-5: 1.5rem; /* 24px */
+  --space-2: 2rem; /* 32px */
+  --space-2-5: 2.5rem; /* 40px */
+  --space-3: 3rem; /* 48px */
+  --space-4: 4rem; /* 64px */
+  --space-5: 5rem; /* 80px */
+  --space-6: 6rem; /* 96px */
+
+  /* Border Radius */
+  --radius-small: 0.25rem; /* 4px */
+  --radius-medium: 0.5rem; /* 8px */
+  --radius-large: 1rem; /* 16px */
+
+  /* Shadows */
+  --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Variants */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #111827;
+    --color-background-dark: #0F172A;
+    --color-text-primary: #F9FAFB;
+    --color-text-secondary: #D1D5DB;
+    --color-border: #374151;
+  }
+}
